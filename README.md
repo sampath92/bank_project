@@ -1,6 +1,6 @@
 # Initiation
 
-1. Run `composer install'
+1. Run `composer install`
 2. Run `cp .env.example .env`
 3. Change database credentials in .env file
 4. Start apache and mysql
