@@ -13,6 +13,9 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware('auth:api')->group(function () {
 });
+
+Route::post('/bank_account/create', 'BankAccountController@create');
+
+Route::post('/customer/create', 'CustomerController@create');
